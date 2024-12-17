@@ -40,7 +40,7 @@ body{
 }
 #logo_principal img{
   width: auto;
-  height: 150px;
+  height: 120px;
   object-fit: cover;
   transition: transform 0.3s ease, opacity 0.7s ease-in-out;
   cursor: pointer;
