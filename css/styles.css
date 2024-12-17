@@ -1,0 +1,205 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden; 
+}
+body{
+  background-color: #1b1b1b;
+  color: #fff9f6;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  font-family: 'inter';
+  letter-spacing: -1px;
+}
+/* navbar */
+#navbar{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+#aspiral{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  opacity: .2;
+}
+#logo_principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo_principal img{
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.7s ease-in-out;
+  cursor: pointer;
+}
+#logo_principal img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#logo_principal:hover img {
+  content: url('../src/img/LogoHorizontalRosa.avif');
+}
+/* section 1 */
+#section1{
+  margin-top: 10px;
+  height: auto;
+  min-height: 400px;
+  width: 100%;
+}
+#container1{
+  height: 100%;
+  width: auto;
+  max-width: 80%;
+}
+#info1{
+  letter-spacing: -1px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  h1{
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ED145B, #f95c5c); 
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-family: 'Neue Machina', sans-serif;
+  }
+  p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #dfdee3;
+    width: 650px;
+  }
+  span{
+    font-weight: bold;
+
+  }
+}
+#buttons1{
+  height: auto;
+  display: flex;
+  justify-content: left;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+  #buttons1 .btn1{
+    background-color: #ED145B;
+    color: #1b1b1b;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+#buttons1 .btn2{
+  border: 1px solid #ED145B;
+  color: #ED145B;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+#buttons1 .btn2:hover,
+#buttons1 .btn1:hover{
+  opacity: .7;
+  transform: scale(1.02);
+}
+#orçamento{
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#orçamento .orçamento_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s ease;
+  img{
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+.orçamento_btn:hover{
+  color: #ED145B;
+}
+/* section 2 */
+#section2{
+  border: 1px solid #f95c5c;
+  height: auto;
+  min-height: 400px;
+}
+#serviços{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  margin-top: 15px;
+  img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+#cards{
+  border: 1px solid black;
+}
+#cards1,
+#cards2,
+#cards3{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card1_1,
+.card1_3,
+.card3_1,
+.card3_3{
+  border: 1.5px solid #ED145B;
+  width: 350px;
+  height: 400px;
+  border-radius: 8px;
+}
+.card1_2,
+.card3_2{
+  width: 500px;
+  height: 400px;
+  background: linear-gradient(120deg, #ed145c33, #72023627);
+  border: 1.5px solid #ED145B;
+  border-radius: 8px;
+}
