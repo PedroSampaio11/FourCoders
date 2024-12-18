@@ -25,14 +25,6 @@ body{
   position: relative;
   z-index: 1;
 }
-#nav_btn{
-  padding: 7px 70px;
-  border: 1px solid #ED145B;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  color: #ED145B;
-  font-weight: bold;
-}
 #logo_principal{
   display: flex;
   justify-content: center;
@@ -46,6 +38,19 @@ body{
   position: absolute;
   top: 0;
   right: 0;
+  animation: float 8s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(22px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 #logo_principal img{
   width: auto;
@@ -80,6 +85,20 @@ body{
 #links_principais li:first-child a {
   color: #ED145B;
 }
+#nav_btn{
+  padding: 7px 70px;
+  border: 1px solid #ED145B;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: #ED145B;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+#nav_btn:hover{
+  opacity: .8;
+  transform: scale(1.02);
+  background-color: #ed145c1b;
+}
 /* section 1 */
 #section1{
   margin-top: 10px;
@@ -110,12 +129,33 @@ body{
   }
   span{
     font-weight: bold;
+    background: linear-gradient(45deg, #ed145c, #f95c5c);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
   }
-
+  span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px; 
+    width: 20%;
+    background: linear-gradient(120deg, #ED145B, #f95c5c);
+    animation: add 3s infinite ease-in-out;
+}
   p{
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 200;
     color: #f3f4f6;
+  }
+}
+@keyframes add {
+  0%{
+    width: 0%;
+  }100%{
+    width: 100%;
   }
 }
 #buttons1{
@@ -188,17 +228,17 @@ body{
 }
 #serviços{
   display: flex;
-  width: auto;
-  justify-content: center;
   align-items: center;
-  height: auto;
-  max-height: 150px;
-  margin-top: 15px;
-  img{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-  }
+  flex-direction: column;
+}
+#serviços h2{
+  font-size: 5.5rem;
+}
+#serviços p{
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #f3f4f6;
+  text-align: center;
 }
 #cards{
   border: 1px solid black;
