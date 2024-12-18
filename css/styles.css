@@ -14,15 +14,23 @@ body{
   max-width: 1300px;
   font-family: 'inter';
   letter-spacing: -1px;
+  padding: 0 5px;
 }
 /* navbar */
 #navbar{
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 1;
+}
+#nav_btn{
+  padding: 7px 70px;
+  border: 1px solid #ED145B;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: #ED145B;
 }
 #logo_principal{
   display: flex;
@@ -31,7 +39,7 @@ body{
 }
 #logo_principal img{
   width: auto;
-  height: 120px;
+  height: 130px;
   object-fit: cover;
   transition: transform 0.3s ease, opacity 0.7s ease-in-out;
   cursor: pointer;
@@ -43,6 +51,25 @@ body{
 #logo_principal:hover img {
   content: url('../src/img/LogoHorizontalRosa.avif');
 }
+#links_principais{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+}
+#links_principais li a{
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+#links_principais li:hover, a:hover{
+  opacity: .7;
+  transform: scale(1.05);
+}
+#links_principais li:first-child a {
+  color: #ED145B;
+}
 /* section 1 */
 #section1{
   margin-top: 10px;
@@ -50,30 +77,35 @@ body{
   min-height: 450px;
   width: 100%;
   margin-top: 55px;
-  border: 1px solid green;
 }
 #container1{
   height: 100%;
   width: auto;
-  max-width: 65%;
-  border: 1px solid beige;
+  max-width: 60%;
 }
 #info1{
   letter-spacing: -1px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  gap: 10px;
+  margin-bottom: 22px;
   h1{
-    font-size: 6.6rem;
-    font-weight: bold;
-  }
-  h2{
-    font-size: 3.3rem;
-    font-weight: 600;
-    background: linear-gradient(90deg, #ED145B, #f95c5c); 
+    font-size: 7rem;
+    line-height: 77px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #ed145c, #f95c5c);
     -webkit-background-clip: text;
     color: transparent;
+  }
+  span{
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #f3f4f6;
   }
 }
 #buttons1{
