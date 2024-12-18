@@ -250,7 +250,10 @@ body{
   flex-direction: column;
   gap: 35px;
   padding: 10px 5px;
-  overflow: hidden;
+  position: relative;
+  z-index: 1; 
+  padding: 25px 50px;
+  background: transparent; 
 }
 #cards1,
 #cards2,
@@ -368,18 +371,41 @@ body{
 }
 .card1_1, .card1_2, .card1_3,
 .card2_1, .card2_2, .card2_3,
-.card3_1, .card3_2, .card3_3{
+.card3_1, .card3_2, .card3_3 {
+  position: relative; /* Necessário para posicionar o blur */
   transition: 0.3s ease-in-out;
+  border: 1.5px solid rgba(237, 20, 91, 0.7); 
+  box-shadow: 0 4px 15px rgba(237, 20, 92, 0.132); 
 }
+
 .card1_1:hover, .card1_2:hover, .card1_3:hover,
 .card2_1:hover, .card2_2:hover, .card2_3:hover,
-.card3_1:hover, .card3_2:hover, .card3_3:hover{
-  transform: scale(1.02);
-  opacity: .7;
+.card3_1:hover, .card3_2:hover, .card3_3:hover {
+  transform: scale(1.03); 
+  opacity: 1;
   cursor: pointer;
+  box-shadow: 0 10px 40px rgba(237, 20, 91, 0.5), 
+              0 0 30px rgba(237, 20, 91, 0.3);
+  filter: brightness(1.1); /* Aumenta a luminosidade ao passar o mouse */
+}
+#cards::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Expande ainda mais para cima */
+  left: -50px; /* Expande ainda mais para as laterais */
+  right: -50px; /* Expande ainda mais para as laterais */
+  bottom: -50px; /* Expande ainda mais para baixo */
+  background: radial-gradient(
+    circle,
+    rgba(237, 20, 91, 0.3) 10%, /* Cor inicial com opacidade maior */
+    rgba(114, 2, 54, 0.15) 50%, /* Transição intermediária */
+    transparent 100% /* Fundo completamente transparente */
+  ); 
+  filter: blur(100px); /* Blur muito mais alto para suavizar as bordas */
+  z-index: 0; /* Mantém o fundo atrás dos cards */
+  pointer-events: none; /* Impede interação */
 }
 .qualidade{
-  border: 1px solid gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,4 +420,20 @@ body{
     font-weight: 200;
     letter-spacing: -.7px;
   }
+}
+.btn_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.btn_2 .btn2{
+  border: 1.5px solid #ED145B;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #f95c5c2f, #ed145c2d, #72023641);
+  height: 65px;
+  width: 600px;
+  color: #ED145B;
+  font-size: 2.8rem;
+  font-weight: bold;
 }
