@@ -7,8 +7,7 @@ html, body {
   overflow-x: hidden; 
 }
 body{
-  background: url(../src/img/bgFourCoders.avif) no-repeat;
-  background-size: cover;
+  background-color: #1b1b1b;
   color: #fff9f6;
   margin: 0 auto;
   padding: 0;
@@ -24,15 +23,6 @@ body{
   align-items: center;
   position: relative;
   z-index: 1;
-}
-#aspiral{
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  height: auto;
-  object-fit: cover;
-  width: 100%;
-  opacity: .2;
 }
 #logo_principal{
   display: flex;
@@ -57,13 +47,16 @@ body{
 #section1{
   margin-top: 10px;
   height: auto;
-  min-height: 400px;
+  min-height: 450px;
   width: 100%;
+  margin-top: 55px;
+  border: 1px solid green;
 }
 #container1{
   height: 100%;
   width: auto;
-  max-width: 80%;
+  max-width: 65%;
+  border: 1px solid beige;
 }
 #info1{
   letter-spacing: -1px;
@@ -72,25 +65,15 @@ body{
   flex-direction: column;
   margin-bottom: 10px;
   h1{
-    font-size: 6rem;
+    font-size: 6.6rem;
     font-weight: bold;
   }
   h2{
-    font-size: 2.4rem;
+    font-size: 3.3rem;
     font-weight: 600;
     background: linear-gradient(90deg, #ED145B, #f95c5c); 
     -webkit-background-clip: text;
-    color: transparent; 
-    font-family: 'Neue Machina', sans-serif;
-  }
-  p{
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: #dfdee3;
-    width: 650px;
-  }
-  span{
-    font-weight: bold;
+    color: transparent;
   }
 }
 #buttons1{
