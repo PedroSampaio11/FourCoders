@@ -40,7 +40,7 @@ body{
 .aspiral{
   width: auto;
   height: 800px;
-  opacity: .22;
+  opacity: .44;
   z-index: -1;
   position: absolute;
   top: 0;
