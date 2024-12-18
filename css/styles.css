@@ -31,6 +31,7 @@ body{
   border-radius: 8px;
   font-size: 1.4rem;
   color: #ED145B;
+  font-weight: bold;
 }
 #logo_principal{
   display: flex;
@@ -69,7 +70,7 @@ body{
 }
 #links_principais li a{
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: 0.3s ease;
 }
 #links_principais li:hover, a:hover{
