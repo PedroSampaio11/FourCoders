@@ -37,6 +37,15 @@ body{
   justify-content: center;
   align-items: center;
 }
+.aspiral{
+  width: auto;
+  height: 800px;
+  opacity: .22;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #logo_principal img{
   width: auto;
   height: 130px;
