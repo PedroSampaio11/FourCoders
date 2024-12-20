@@ -436,4 +436,12 @@ body{
   color: #ED145B;
   font-size: 2.8rem;
   font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.btn_2 .btn2:hover{
+  background: linear-gradient(120deg, #72023641, #ed145c2d, #f95c5c2f);
+  opacity: .8;
+  transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
 }

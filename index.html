@@ -8,6 +8,7 @@
     <!-- links -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Pré-conexão com os servidores do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +24,18 @@
   <body>
     <header>
       <nav id="navbar">
-        <div id="logo_principal">
+        <div id="logo_principal" data-aos="fade-right" data-aos-duration="500">
           <img
             src="./src/img/LogoHorizontalBranco.png"
             alt="Logo Horizontal Branco da Four Coders"
           />
         </div>
         <ul id="links_principais">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Dúvidas</a></li>
-          <button id="nav_btn">Fale Conosco</button>
+          <li data-aos="fade-down" data-aos-duration="200"><a href="#" >Home</a></li>
+          <li data-aos="fade-down" data-aos-duration="300"><a href="#" >Serviços</a></li>
+          <li data-aos="fade-down" data-aos-duration="400" ><a href="#" >Contato</a></li>
+          <li data-aos="fade-down" data-aos-duration="500"><a href="#" >Dúvidas</a></li>
+          <button  data-aos="fade-left" data-aos-duration="500" id="nav_btn">Fale Conosco</button>
         </ul>
       </nav>
     </header>
@@ -144,17 +145,20 @@
           </div>
         </div>
         <div class="qualidade">
-          <p>
-            Qualidade FourCoders
-          </p>
-          <img src="./src/icons/qualidade.png" alt="ícone de qualidade">
+          <p>Qualidade FourCoders</p>
+          <img src="./src/icons/qualidade.png" alt="ícone de qualidade" />
           <p>100% garantida</p>
         </div>
         <div class="btn_2">
-          <button class="btn2"> Fale Conosco</button>
+          <button class="btn2">Fale Conosco</button>
         </div>
       </section>
     </main>
     <footer></footer>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
