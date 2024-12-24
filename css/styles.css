@@ -85,6 +85,7 @@ background: linear-gradient(180deg, #1b1b1b 0%, #440120 100%);
 }
 #links_principais li:first-child a {
   color: #ED145B;
+  font-weight: 600;
 }
 #nav_btn{
   padding: 7px 70px;
