@@ -9,7 +9,6 @@ html, body {
 }
 body{
 background: linear-gradient(180deg, #1b1b1b 0%, #440120 100%); 
-  background-position: center;
   color: #fff9f6;
   margin: 0 auto;
   padding: 0;
