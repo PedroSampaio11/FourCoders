@@ -470,5 +470,48 @@ background: linear-gradient(180deg, #1b1b1b 0%, #440120 100%);
 }
 /* section3 */
 #section3{
-  height: 100vh;
+  height: auto;
+  border: 1px solid green;
+}
+#title3{
+  border: 1px solid blue;
+}
+#cards_thirds{
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+#responsive{
+  height: 235px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+#responsive_card{
+  border: 1px solid #ED145B;
+  width: 1000px;
+}
+#performance, #design{
+  height: 235px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+#design_card{
+  border: 1px solid #ed145c;
+  width: 1000px;
+}
+#performance_card{
+  border: 1px solid #ed145c;
+  width: 1000px;
+}
+#seo{
+  height: 235px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+#seo_card{
+  border: 1px solid #ed145c;
+  width: 1000px;
 }
